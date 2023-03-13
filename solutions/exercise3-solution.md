@@ -25,3 +25,11 @@ Execute a docker container by using the `-u` parameter and and in the meantime c
  - By using this command line, enter your UID and GID 
 `docker run --rm -v $(pwd)/data/:/scratch -u <your UID>:<your GID> quay.io/biocontainers/fastqc:0.11.9--0 touch /scratch/file3.txt`
  - Especially, on your Linux host, verify the file permissions of the file `file3.txt`.
+ 
+ 
+ 
+ What I did:
+``` 
+ docker run --rm -v $(pwd)/data/:/scratch -u 1000:1000 quay.io/biocontainers/fastqc:0.11.9--0 touch /scratch/file3.txt
+ 
+```
