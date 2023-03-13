@@ -20,16 +20,17 @@ For the exercise we can use `--rm` to remove the container after running, `--nam
 ```
 # Second subquestion
 docker run --rm --name fastqc_albot quay.io/biocontainers/fastqc:0.11.9--0 fastqc -h
-'''
+```
 The -rm removes the container.
 Also possible:
-'''
+```
 docker docker run --name exercise1 quay.io/biocontainers/fastqc:0.11.9--0 fastqc -hdocker rm exercise1
 
 # Third subquestion
+
 docker run --rm -it --name fastqc_albot quay.io/biocontainers/fastqc:0.11.9--0 /bin/bash
 ```
-'''
 Also possible:
-'''
+```
 docker run -it quay.io/biocontainers/fastqc:0.11.9--0 /bin/bash
+```
